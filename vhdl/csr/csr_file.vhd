@@ -2,7 +2,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
 use work.configure.all;
@@ -52,7 +52,7 @@ begin
 		csr_eo.mret <= mret;
 
 		if mcsr.mtvec.mode = "01" then
-			csr_eo.tvec <= (mcsr.mtvec.base + mcsr.mcause.code(61 downto 0)) & "00";
+			csr_eo.tvec <= std_logic_vector(unsigned(mcsr.mtvec.base) + unsigned(mcsr.mcause.code(61 downto 0))) & "00";
 		else
 			csr_eo.tvec <= mcsr.mtvec.base & "00";
 		end if;
@@ -301,10 +301,10 @@ begin
 
 			else
 
-				mcsr.mcycle <= mcsr.mcycle + X"0000000000000001";
+				mcsr.mcycle <= std_logic_vector(unsigned(mcsr.mcycle) + 1);
 
 				if (csr_ci.int or csr_ci.fpu or csr_ci.csr) = '1' then
-					mcsr.minstret <= mcsr.minstret + X"0000000000000001";
+					mcsr.minstret <= std_logic_vector(unsigned(mcsr.minstret) + 1);
 				end if;
 
 				if csr_ei.time_irpt = '1' then

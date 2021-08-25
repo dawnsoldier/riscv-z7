@@ -1,6 +1,7 @@
 build
 !sim/
 !soft/
+!synth/
 !tools/
 !vhdl/
 !Makefile

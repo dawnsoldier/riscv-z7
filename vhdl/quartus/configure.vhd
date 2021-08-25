@@ -57,7 +57,7 @@ package configure is
 	constant cache_top_addr    : std_logic_vector(63 downto 0) := X"0000000100000000";
 
 	constant clk_freq          : integer := 50000000;
-	constant clk_pll           : integer := 25000000;
+	constant clk_pll           : integer := 12500000;
 	constant rtc_freq          : integer := 32768;
 	constant baudrate          : integer := 115200;
 

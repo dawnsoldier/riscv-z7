@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 file_in_vhd = open('bram_mem.vhd.init','r')
 file_out_vhd = open('bram_mem.vhd','w')

@@ -17,6 +17,7 @@ TEST ?= dhrystone
 AAPG ?= aapg
 CONFIG ?= integer
 CYCLES ?= 1000000000
+FPGA ?= quartus # vivado diamond libero quartus
 WAVE ?= "" # "wave" for saving dump file
 
 generate_isa:
@@ -57,5 +58,8 @@ generate_aapg:
 
 simulate:
 	sim/run.sh ${BASEDIR} ${GHDL} ${TEST} ${CYCLES} ${WAVE}
+
+synthesis:
+	synth/generate.sh ${BASEDIR} ${GHDL} ${FPGA}
 
 all: generate_isa generate_dhrystone generate_coremark generate_csmith generate_torture simulate
