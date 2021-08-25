@@ -3,7 +3,7 @@ default: none
 GHDL ?= /opt/ghdl/bin/ghdl
 RISCV ?= /opt/riscv/bin
 XLEN ?= 64
-MARCH ?= rv64imfdc
+MARCH ?= rv64imfdc_zba_zbb_zbc
 MABI ?= lp64d
 ITER ?= 1
 CSMITH ?= /opt/csmith
