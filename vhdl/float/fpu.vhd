@@ -9,7 +9,6 @@ use work.lzc_lib.all;
 use work.fp_cons.all;
 use work.fp_typ.all;
 use work.fp_wire.all;
-use work.fp_func.all;
 use work.fp_lib.all;
 
 entity fpu is

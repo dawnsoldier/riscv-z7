@@ -4,10 +4,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use work.functions.all;
 use work.int_constants.all;
 use work.int_wire.all;
 use work.int_types.all;
-use work.int_functions.all;
 
 entity int_pipeline is
 	port(

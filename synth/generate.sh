@@ -28,7 +28,6 @@ $GHDL --synth -fsynopsys \
               $DIR/vhdl/integer/int_constants.vhd \
               $DIR/vhdl/integer/int_types.vhd \
               $DIR/vhdl/integer/int_wire.vhd \
-              $DIR/vhdl/integer/int_functions.vhd \
               $DIR/vhdl/atomic/atom_constants.vhd \
               $DIR/vhdl/atomic/atom_wire.vhd \
               $DIR/vhdl/atomic/atom_functions.vhd \
@@ -39,16 +38,15 @@ $GHDL --synth -fsynopsys \
               $DIR/vhdl/float/fp_cons.vhd \
               $DIR/vhdl/float/fp_typ.vhd \
               $DIR/vhdl/float/fp_wire.vhd \
-              $DIR/vhdl/float/fp_func.vhd \
               $DIR/vhdl/csr/csr_constants.vhd \
               $DIR/vhdl/csr/csr_wire.vhd \
               $DIR/vhdl/csr/csr_functions.vhd \
               $DIR/vhdl/compress/comp_constants.vhd \
               $DIR/vhdl/compress/comp_wire.vhd \
-              $DIR/vhdl/compress/comp_decode.vhd \
               $DIR/vhdl/setting/constants.vhd \
               $DIR/vhdl/setting/wire.vhd \
               $DIR/vhdl/setting/functions.vhd \
+              $DIR/vhdl/compress/comp_decode.vhd \
               $DIR/vhdl/memory/arbiter.vhd \
               $DIR/vhdl/memory/pmp.vhd \
               $DIR/vhdl/memory/timer.vhd \
@@ -134,3 +132,25 @@ $GHDL --synth -fsynopsys \
               $DIR/vhdl/${FPGA}/cpu.vhd \
               $DIR/vhdl/${FPGA}/soc.vhd \
               -e soc > soc.vhd
+
+cp $DIR/vhdl/${FPGA}/configure.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/lzc/lzc_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/lzc/lzc_lib.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/integer/int_constants.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/integer/int_types.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/integer/int_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/atomic/atom_constants.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/atomic/atom_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/bitmanip/bit_constants.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/bitmanip/bit_types.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/bitmanip/bit_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/float/fp_cons.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/float/fp_typ.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/float/fp_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/csr/csr_constants.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/csr/csr_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/compress/comp_constants.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/compress/comp_wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/setting/constants.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/setting/wire.vhd $DIR/synth/vhdl/.
+cp $DIR/vhdl/setting/functions.vhd $DIR/synth/vhdl/.

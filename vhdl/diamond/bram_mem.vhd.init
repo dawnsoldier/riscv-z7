@@ -5,6 +5,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 use work.configure.all;
+use work.functions.all;
 
 entity bram_mem is
 	generic(

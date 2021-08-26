@@ -60,6 +60,13 @@ package functions is
 	)
 	return std_logic_vector;
 
+	function and_reduce(arg: std_logic_vector) return ux01;
+	function nand_reduce(arg: std_logic_vector) return ux01;
+	function or_reduce(arg: std_logic_vector) return ux01;
+	function nor_reduce(arg: std_logic_vector) return ux01;
+	function xor_reduce(arg: std_logic_vector) return ux01;
+	function xnor_reduce(arg: std_logic_vector) return ux01;
+
 end functions;
 
 package body functions is
@@ -302,5 +309,50 @@ package body functions is
 			return data;
 		end if;
 	end function nan_boxing;
+
+	function and_reduce(arg: std_logic_vector) return ux01 is
+		variable result: std_logic;
+	begin
+		result := '1';
+		for i in arg'range loop
+			result := result and arg(i);
+		end loop;
+		return result;
+	end;
+
+	function nand_reduce(arg: std_logic_vector) return ux01 is
+	begin
+		return not and_reduce(arg);
+	end;
+
+	function or_reduce(arg: std_logic_vector) return ux01 is
+		variable result: std_logic;
+	begin
+		result := '0';
+		for i in arg'range loop
+			result := result or arg(i);
+		end loop;
+		return result;
+	end;
+
+	function nor_reduce(arg: std_logic_vector) return ux01 is
+	begin
+		return not or_reduce(arg);
+	end;
+
+	function xor_reduce(arg: std_logic_vector) return ux01 is
+		variable result: std_logic;
+	begin
+		result := '0';
+		for i in arg'range loop
+			result := result xor arg(i);
+		end loop;
+		return result;
+	end;
+
+	function xnor_reduce(arg: std_logic_vector) return ux01 is
+	begin
+		return not xor_reduce(arg);
+	end;
 
 end functions;

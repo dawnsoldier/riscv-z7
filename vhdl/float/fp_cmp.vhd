@@ -4,10 +4,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use work.functions.all;
 use work.lzc_wire.all;
 use work.fp_cons.all;
 use work.fp_wire.all;
-use work.fp_func.all;
 
 entity fp_cmp is
 	port(

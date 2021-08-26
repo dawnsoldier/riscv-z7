@@ -3,13 +3,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use ieee.std_logic_misc.all;
 
+use work.functions.all;
 use work.lzc_wire.all;
 use work.fp_cons.all;
 use work.fp_typ.all;
 use work.fp_wire.all;
-use work.fp_func.all;
 
 entity fp_exe is
 	port(

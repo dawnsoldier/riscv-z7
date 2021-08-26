@@ -3,10 +3,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use ieee.std_logic_misc.all;
 
 use work.configure.all;
 use work.constants.all;
+use work.functions.all;
 use work.iwire.all;
 
 entity ivalid is

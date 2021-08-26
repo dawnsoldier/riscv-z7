@@ -3,8 +3,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use ieee.std_logic_misc.all;
 
+use work.functions.all;
 use work.comp_constants.all;
 use work.comp_wire.all;
 use work.int_wire.all;

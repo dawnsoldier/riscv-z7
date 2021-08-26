@@ -74,8 +74,6 @@ $SYNTAX $DIR/vhdl/integer/int_types.vhd
 $ANALYS $DIR/vhdl/integer/int_types.vhd
 $SYNTAX $DIR/vhdl/integer/int_wire.vhd
 $ANALYS $DIR/vhdl/integer/int_wire.vhd
-$SYNTAX $DIR/vhdl/integer/int_functions.vhd
-$ANALYS $DIR/vhdl/integer/int_functions.vhd
 
 $SYNTAX $DIR/vhdl/atomic/atom_constants.vhd
 $ANALYS $DIR/vhdl/atomic/atom_constants.vhd
@@ -99,8 +97,6 @@ $SYNTAX $DIR/vhdl/float/fp_typ.vhd
 $ANALYS $DIR/vhdl/float/fp_typ.vhd
 $SYNTAX $DIR/vhdl/float/fp_wire.vhd
 $ANALYS $DIR/vhdl/float/fp_wire.vhd
-$SYNTAX $DIR/vhdl/float/fp_func.vhd
-$ANALYS $DIR/vhdl/float/fp_func.vhd
 
 $SYNTAX $DIR/vhdl/csr/csr_constants.vhd
 $ANALYS $DIR/vhdl/csr/csr_constants.vhd
@@ -113,8 +109,6 @@ $SYNTAX $DIR/vhdl/compress/comp_constants.vhd
 $ANALYS $DIR/vhdl/compress/comp_constants.vhd
 $SYNTAX $DIR/vhdl/compress/comp_wire.vhd
 $ANALYS $DIR/vhdl/compress/comp_wire.vhd
-$SYNTAX $DIR/vhdl/compress/comp_decode.vhd
-$ANALYS $DIR/vhdl/compress/comp_decode.vhd
 
 $SYNTAX $DIR/vhdl/setting/constants.vhd
 $ANALYS $DIR/vhdl/setting/constants.vhd
@@ -122,6 +116,9 @@ $SYNTAX $DIR/vhdl/setting/wire.vhd
 $ANALYS $DIR/vhdl/setting/wire.vhd
 $SYNTAX $DIR/vhdl/setting/functions.vhd
 $ANALYS $DIR/vhdl/setting/functions.vhd
+
+$SYNTAX $DIR/vhdl/compress/comp_decode.vhd
+$ANALYS $DIR/vhdl/compress/comp_decode.vhd
 
 $SYNTAX $DIR/vhdl/memory/arbiter.vhd
 $ANALYS $DIR/vhdl/memory/arbiter.vhd
