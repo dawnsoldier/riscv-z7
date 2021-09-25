@@ -38,20 +38,11 @@ package configure is
 	constant bram_base_addr    : std_logic_vector(63 downto 0) := X"0000000000000000";
 	constant bram_top_addr     : std_logic_vector(63 downto 0) := X"0000000000002000";
 
-	constant uart_base_addr    : std_logic_vector(63 downto 0) := X"0000000000100000";
-	constant uart_top_addr     : std_logic_vector(63 downto 0) := X"0000000000100004";
-
 	constant timer_base_addr   : std_logic_vector(63 downto 0) := X"0000000000200000";
 	constant timer_top_addr    : std_logic_vector(63 downto 0) := X"0000000000200010";
 
-	constant qspi_base_addr    : std_logic_vector(63 downto 0) := X"0000000001000000";
-	constant qspi_top_addr     : std_logic_vector(63 downto 0) := X"0000000002000000";
-
-	constant sram_base_addr    : std_logic_vector(63 downto 0) := X"0000000008000000";
-	constant sram_top_addr     : std_logic_vector(63 downto 0) := X"0000000010000000";
-
-	constant axi_base_addr     : std_logic_vector(63 downto 0) := X"0000000010000000";
-	constant axi_top_addr      : std_logic_vector(63 downto 0) := X"0000000100000000";
+	constant ahb_base_addr     : std_logic_vector(63 downto 0) := X"0000000010000000";
+	constant ahb_top_addr      : std_logic_vector(63 downto 0) := X"0000000100000000";
 
 	constant cache_base_addr   : std_logic_vector(63 downto 0) := X"0000000010000000";
 	constant cache_top_addr    : std_logic_vector(63 downto 0) := X"0000000100000000";
@@ -64,17 +55,5 @@ package configure is
 	constant clk_divider_pll   : integer := (clk_freq/clk_pll)/2-1;
 	constant clk_divider_rtc   : integer := (clk_freq/rtc_freq)/2-1;
 	constant clks_per_bit      : integer := clk_pll/baudrate-1;
-
-	constant ram_read_freq     : integer := 4761904;
-	constant ram_write_freq    : integer := 3846153;
-
-	constant ram_read_divider  : integer := clk_pll/ram_read_freq;
-	constant ram_write_divider : integer := clk_pll/ram_write_freq;
-
-	constant spi_read_freq     : integer := 25000000;
-	constant spi_write_freq    : integer := 133000000;
-
-	constant spi_read_divider  : integer := clk_pll/spi_read_freq;
-	constant spi_write_divider : integer := clk_pll/spi_write_freq;
 
 end configure;

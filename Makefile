@@ -17,7 +17,7 @@ TEST ?= dhrystone
 AAPG ?= aapg
 CONFIG ?= integer
 CYCLES ?= 1000000000
-FPGA ?= quartus # vivado diamond libero quartus
+FPGA ?= quartus # vivado quartus
 WAVE ?= "" # "wave" for saving dump file
 
 generate_isa:

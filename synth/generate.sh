@@ -52,8 +52,7 @@ $GHDL --synth -fsynopsys \
               $DIR/vhdl/memory/timer.vhd \
               $DIR/vhdl/memory/uart.vhd \
               $DIR/vhdl/memory/axi.vhd \
-              $DIR/vhdl/memory/sram.vhd \
-              $DIR/vhdl/memory/qspi.vhd \
+              $DIR/vhdl/memory/ahb.vhd \
               $DIR/vhdl/memory/check.vhd \
               $DIR/vhdl/memory/print.vhd \
               $DIR/vhdl/icache/iwire.vhd \

@@ -128,12 +128,6 @@ $SYNTAX $DIR/vhdl/memory/timer.vhd
 $ANALYS $DIR/vhdl/memory/timer.vhd
 $SYNTAX $DIR/vhdl/memory/uart.vhd
 $ANALYS $DIR/vhdl/memory/uart.vhd
-$SYNTAX $DIR/vhdl/memory/axi.vhd
-$ANALYS $DIR/vhdl/memory/axi.vhd
-$SYNTAX $DIR/vhdl/memory/sram.vhd
-$ANALYS $DIR/vhdl/memory/sram.vhd
-$SYNTAX $DIR/vhdl/memory/qspi.vhd
-$ANALYS $DIR/vhdl/memory/qspi.vhd
 $SYNTAX $DIR/vhdl/memory/check.vhd
 $ANALYS $DIR/vhdl/memory/check.vhd
 $SYNTAX $DIR/vhdl/memory/print.vhd
