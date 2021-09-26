@@ -36,7 +36,7 @@ end ahb;
 
 architecture behavior of ahb is
 
-	type state_type is (IDLE, SEND, GET);
+	type state_type is (IDLE, ACTIVE);
 
 	type register_type is record
 		state : state_type;
@@ -58,6 +58,17 @@ begin
 	begin
 
 		v := r;
+
+		case r.state is
+			when IDLE =>
+				if ahb_valid = '1' then
+					v.state := ACTIVE;
+				end if;
+			when ACTIVE =>
+				null;
+			when others =>
+				null;
+		end case;
 
 		rin <= v;
 
